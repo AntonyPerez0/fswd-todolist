@@ -1,3 +1,44 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.task.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  .container {
+    margin-top: 40px;
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  .task {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #e9ecef;
+    }
+  
+    &.completed {
+      text-decoration: line-through;
+      color: #888;
+    }
+  }
+  
+  .btn-complete {
+    margin-right: 10px;
+  }
